@@ -196,7 +196,7 @@ const LunesAViernesIda = () => {
             {/* Publicidad Izquierda Inferior */}
             <div className="card rounded h-100" data-aos="fade-right">
               <img
-                 src={imageThree}
+                src={imageThree}
                 className="img-fluid h-100 object-fit-cover"
                 alt="Publicidad"
                 loading="lazy"
@@ -244,7 +244,7 @@ const LunesAViernesIda = () => {
           <div className="col-12 col-md-4">
             {/* Publicidad Derecha Inferior */}
             <div className="card rounded h-100" data-aos="fade-left">
-            <img
+              <img
                 src={imageFour}
                 className="img-fluid h-100 object-fit-cover"
                 alt="Publicidad"

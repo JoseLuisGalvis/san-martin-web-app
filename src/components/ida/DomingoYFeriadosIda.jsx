@@ -204,7 +204,7 @@ const DomingoYFeriadosIda = () => {
           </div>
 
           <div className="col-12 col-md-4">
-            {/* Resultados de la Búsqueda */}
+            {/* Resultados de la Búsqueda  */}
             <div className="card h-100">
               <div className="card-body">
                 <h5 className="card-title">Horarios Disponibles</h5>

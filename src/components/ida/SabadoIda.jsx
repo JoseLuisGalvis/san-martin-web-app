@@ -182,10 +182,10 @@ const SabadoIda = () => {
             {/* Publicidad Derecha Superior */}
             <div className="card h-100">
               <img
-                  src={imageTwo}
-                  className="img-fluid h-100 object-fit-cover"
-                  alt="Publicidad"
-                  loading="lazy"
+                src={imageTwo}
+                className="img-fluid h-100 object-fit-cover"
+                alt="Publicidad"
+                loading="lazy"
               />
             </div>
           </div>
