@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import imageOne from '../assets/images/publicidad.jpg';
-import imageTwo from '../assets/images/Clientes.jpg';
-import imageThree from '../assets/images/publicidad.jpeg';
-import imageFour from '../assets/images/publicar.jpg';
+import imageFive from '../assets/images/publicidad.jpg';
+import imageSix from '../assets/images/Clientes.jpg';
+import imageSeven from '../assets/images/publicidad.jpeg';
+import imageEight from '../assets/images/publicar.jpg';
 
 const LunesAViernesIda = () => {
   const [data, setData] = useState(null);
@@ -110,7 +110,7 @@ const LunesAViernesIda = () => {
             {/* Publicidad Izquierda Superior */}
             <div className="card rounded h-100" data-aos="fade-right">
               <img
-                src={imageOne}
+                src={imageFive}
                 className="img-fluid h-100 object-fit-cover"
                 alt="Publicidad"
                 loading="lazy"
@@ -183,7 +183,7 @@ const LunesAViernesIda = () => {
             {/* Publicidad Derecha Superior */}
             <div className="card rounded h-100" data-aos="fade-left">
               <img
-                src={imageTwo}
+                src={imageSix}
                 className="img-fluid h-100 object-fit-cover"
                 alt="Publicidad"
                 loading="lazy"
@@ -196,7 +196,7 @@ const LunesAViernesIda = () => {
             {/* Publicidad Izquierda Inferior */}
             <div className="card rounded h-100" data-aos="fade-right">
               <img
-                src={imageThree}
+                src={imageSeven}
                 className="img-fluid h-100 object-fit-cover"
                 alt="Publicidad"
                 loading="lazy"
@@ -245,7 +245,7 @@ const LunesAViernesIda = () => {
             {/* Publicidad Derecha Inferior */}
             <div className="card rounded h-100" data-aos="fade-left">
               <img
-                src={imageFour}
+                src={imageEight}
                 className="img-fluid h-100 object-fit-cover"
                 alt="Publicidad"
                 loading="lazy"
