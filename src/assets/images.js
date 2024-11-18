@@ -1,10 +1,15 @@
 // src/assets/images.js
 
+import publicidad from "./images/publicidad.jpg";
+import clientes from "./images/Clientes.jpg";
+import camion from "./images/camion.jpg";
+import valla from "./images/valla.jpeg";
+
 const images = {
-  publicidad: "../assets/images/publicidad.jpg",
-  clientes: "../assets/images/Clientes.jpg",
-  camion: "../assets/images/publicidad.jpeg",
-  valla: "../assets/images/publicar.jpg",
+  publicidad,
+  clientes,
+  camion,
+  valla,
 };
 
 export default images;
