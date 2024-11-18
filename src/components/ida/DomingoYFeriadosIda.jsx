@@ -1,5 +1,9 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import imageOne from '../assets/images/publicidad.jpg';
+import imageTwo from '../assets/images/Clientes.jpg';
+import imageThree from '../assets/images/publicidad.jpeg';
+import imageFour from '../assets/images/publicar.jpg';
 
 const DomingoYFeriadosIda = () => {
   const [data, setData] = useState(null);

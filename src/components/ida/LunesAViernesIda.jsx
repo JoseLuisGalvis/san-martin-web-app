@@ -1,5 +1,9 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import imageOne from '../assets/images/publicidad.jpg';
+import imageTwo from '../assets/images/Clientes.jpg';
+import imageThree from '../assets/images/publicidad.jpeg';
+import imageFour from '../assets/images/publicar.jpg';
 
 const LunesAViernesIda = () => {
   const [data, setData] = useState(null);
@@ -106,8 +110,8 @@ const LunesAViernesIda = () => {
             {/* Publicidad Izquierda Superior */}
             <div className="card rounded h-100" data-aos="fade-right">
               <img
-                src={'/src/assets/images/publicidad.jpg'}
-                className="img-fluid rounded h-100 object-fit-cover"
+                src={imageOne}
+                className="img-fluid h-100 object-fit-cover"
                 alt="Publicidad"
                 loading="lazy"
               />
@@ -179,8 +183,8 @@ const LunesAViernesIda = () => {
             {/* Publicidad Derecha Superior */}
             <div className="card rounded h-100" data-aos="fade-left">
               <img
-                src={'/src/assets/images/Clientes.jpg'}
-                className="img-fluid rounded h-100 object-fit-cover"
+                src={imageTwo}
+                className="img-fluid h-100 object-fit-cover"
                 alt="Publicidad"
                 loading="lazy"
               />
@@ -192,8 +196,8 @@ const LunesAViernesIda = () => {
             {/* Publicidad Izquierda Inferior */}
             <div className="card rounded h-100" data-aos="fade-right">
               <img
-                src={'/src/assets/images/publicidad.jpeg'}
-                className="img-fluid rounded h-100 object-fit-cover"
+                 src={imageThree}
+                className="img-fluid h-100 object-fit-cover"
                 alt="Publicidad"
                 loading="lazy"
               />
@@ -240,9 +244,9 @@ const LunesAViernesIda = () => {
           <div className="col-12 col-md-4">
             {/* Publicidad Derecha Inferior */}
             <div className="card rounded h-100" data-aos="fade-left">
-              <img
-                src={'/src/assets/images/publicar.jpg'}
-                className="img-fluid rounded h-100 object-fit-cover"
+            <img
+                src={imageFour}
+                className="img-fluid h-100 object-fit-cover"
                 alt="Publicidad"
                 loading="lazy"
               />
