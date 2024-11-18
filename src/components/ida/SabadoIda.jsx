@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import images from '../assets/images'; // Importa el objeto de imágenes
+import images from '../../assets/images'; // Importa el objeto de imágenes
 
 const SabadoIda = () => {
   const [data, setData] = useState(null);
