@@ -1,9 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import imageFive from '../assets/images/publicidad.jpg';
-import imageSix from '../assets/images/Clientes.jpg';
-import imageSeven from '../assets/images/publicidad.jpeg';
-import imageEight from '../assets/images/publicar.jpg';
+import images from '../assets/images'; // Importa el objeto de imágenes
 
 const LunesAViernesIda = () => {
   const [data, setData] = useState(null);
@@ -110,7 +107,7 @@ const LunesAViernesIda = () => {
             {/* Publicidad Izquierda Superior */}
             <div className="card rounded h-100" data-aos="fade-right">
               <img
-                src={imageFive}
+                src={images.publicidad}
                 className="img-fluid h-100 object-fit-cover"
                 alt="Publicidad"
                 loading="lazy"
@@ -183,7 +180,7 @@ const LunesAViernesIda = () => {
             {/* Publicidad Derecha Superior */}
             <div className="card rounded h-100" data-aos="fade-left">
               <img
-                src={imageSix}
+                src={images.clientes}
                 className="img-fluid h-100 object-fit-cover"
                 alt="Publicidad"
                 loading="lazy"
@@ -196,7 +193,7 @@ const LunesAViernesIda = () => {
             {/* Publicidad Izquierda Inferior */}
             <div className="card rounded h-100" data-aos="fade-right">
               <img
-                src={imageSeven}
+                src={images.camion}
                 className="img-fluid h-100 object-fit-cover"
                 alt="Publicidad"
                 loading="lazy"
@@ -245,7 +242,7 @@ const LunesAViernesIda = () => {
             {/* Publicidad Derecha Inferior */}
             <div className="card rounded h-100" data-aos="fade-left">
               <img
-                src={imageEight}
+                src={images.valla}
                 className="img-fluid h-100 object-fit-cover"
                 alt="Publicidad"
                 loading="lazy"

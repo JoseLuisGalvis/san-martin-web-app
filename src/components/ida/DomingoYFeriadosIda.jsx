@@ -1,9 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import imageOne from '../assets/images/publicidad.jpg';
-import imageTwo from '../assets/images/Clientes.jpg';
-import imageThree from '../assets/images/publicidad.jpeg';
-import imageFour from '../assets/images/publicar.jpg';
+import images from '../assets/images'; // Importa el objeto de imágenes
 
 const DomingoYFeriadosIda = () => {
   const [data, setData] = useState(null);
@@ -109,7 +106,7 @@ const DomingoYFeriadosIda = () => {
             {/* Publicidad Izquierda Superior */}
             <div className="card h-100">
               <img
-                src={imageOne}
+                src={images.publicidad}
                 className="img-fluid h-100 object-fit-cover"
                 alt="Publicidad"
                 loading="lazy"
@@ -182,7 +179,7 @@ const DomingoYFeriadosIda = () => {
             {/* Publicidad Derecha Superior */}
             <div className="card h-100">
               <img
-                src={imageTwo}
+                src={images.clientes}
                 className="img-fluid h-100 object-fit-cover"
                 alt="Publicidad"
                 loading="lazy"
@@ -195,7 +192,7 @@ const DomingoYFeriadosIda = () => {
             {/* Publicidad Izquierda Inferior */}
             <div className="card h-100">
               <img
-                src={imageThree}
+                src={images.camion}
                 className="img-fluid h-100 object-fit-cover"
                 alt="Publicidad"
                 loading="lazy"
@@ -244,7 +241,7 @@ const DomingoYFeriadosIda = () => {
             {/* Publicidad Derecha Inferior */}
             <div className="card h-100">
               <img
-                src={imageFour}
+                src={images.valla}
                 className="img-fluid h-100 object-fit-cover"
                 alt="Publicidad"
                 loading="lazy"
