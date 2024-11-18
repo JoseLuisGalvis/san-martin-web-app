@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #fff; /* Fondo claro por defecto */
+  margin: 0;
+  padding: 0;
+  color: #333; /* Color de texto por defecto (oscuro en modo claro) */
+}
+
+.home-title {
+  color: rgb(0, 73, 172);
+}
+
+.bg-consultar {
+  background-color: rgb(0, 73, 172);
+  color: #ffff;
+  box-shadow: 0 4px 10px rgba(0, 73, 172, 0.3),
+    /* Sombra difusa más grande */ 0 0 20px rgba(0, 73, 172, 0.2); /* Sombra de bordes más suave */
+}
+
+.bg-consultar:hover {
+  background-color: #0d6efd;
+  color: #ffff;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(0, 73, 172, 0.5),
+    /* Sombra difusa más grande */ 0 0 20px rgba(0, 73, 172, 0.3); /* Sombra de bordes más suave */
+}
+
+#home-image {
+  border-radius: 1em;
+  box-shadow: 0 4px 10px rgba(0, 73, 172, 0.3),
+    /* Sombra difusa más grande */ 0 0 20px rgba(0, 73, 172, 0.2); /* Sombra de bordes más suave */
+}
+
+/* Estilos para el reloj con efecto neumórfico */
+.current-time {
+  background-color: #ffffff; /* Fondo blanco */
+  color: rgb(0, 73, 172); /* Color de texto azul */
+  padding: 10px 15px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: inset 2px 2px 6px rgba(0, 73, 172, 0.5),
+    /* Sombra interna a la derecha */ inset -3px -3px 6px rgba(0, 73, 172, 0.3),
+    /* Sombra interna a la izquierda */ 0 0 15px rgba(255, 255, 255, 0.3);
+  font-size: 1.2rem; /* Tamaño del texto */
+  font-weight: bold; /* Negrita para el texto */
+  border: 3px solid rgba(0, 73, 172);
+}
+
+/* Estilos para la card con sombra */
+.card {
+  box-shadow: 0 4px 10px rgba(0, 73, 172, 0.3), 0 0 20px rgba(0, 73, 172, 0.2); /* Sombra difusa y de bordes suaves */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Añadimos transición para suavizar el efecto */
+}
+
+/* Efecto hover con movimiento en el eje Y */
+.card:hover {
+  transform: translateY(-10px); /* Mover la card hacia arriba en el eje Y */
+  box-shadow: 0 6px 20px rgba(0, 73, 172, 0.4), 0 0 30px rgba(0, 73, 172, 0.3); /* Sombra más intensa al hacer hover */
+}
+
+/* Modo Oscuro */
+
+/* Fondo general en modo oscuro */
+.dark-mode {
+  background-color: #121212; /* Fondo oscuro */
+  color: white; /* Texto blanco */
+}
+
+/* Estilos para el fondo y sombra de la clase .bg-consultar en modo oscuro */
+.dark-mode .bg-consultar {
+  background-color: rgb(0, 73, 172); /* Mantener el mismo color para el fondo */
+  color: #ffff; /* Mantener el texto blanco */
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3),
+    0 0 20px rgba(255, 255, 255, 0.2); /* Sombra más suave */
+}
+
+.dark-mode .card:hover {
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3),
+    0 0 20px rgba(255, 255, 255, 0.2); /* Sombra más suave */
+}
+
+.dark-mode #home-image {
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3),
+    0 0 20px rgba(255, 255, 255, 0.2); /* Sombra más suave */
+}
+
+/* Cambiar fondo de la imagen en modo oscuro */
+.dark-mode .bg-cover {
+  filter: brightness(0.5); /* Reducir brillo de la imagen */
+}
+
+/* Estilos para el sol y la luna en el botón */
+.dark-mode .btn.bg-yellow-400 {
+  background-color: #f59e0b; /* Fondo amarillo brillante para el sol */
+}
+
+.btn.bg-white {
+  background-color: #ffffff; /* Fondo blanco para el botón en modo claro */
+}
+
+/* Cambiar color de los íconos para el sol y la luna */
+.dark-mode .btn .text-gray-900 {
+  color: #ffffff; /* Íconos en color blanco para modo oscuro */
+}
+
+.btn .text-gray-900 {
+  color: #121212; /* Íconos en color oscuro para modo claro */
+}
+
+/* Botón cuando el fondo es amarillo */
+.dark-mode .btn.bg-yellow-400:hover {
+  background-color: #d97706; /* Tono más oscuro de amarillo al hacer hover */
+}
+
+.btn.bg-white:hover {
+  background-color: #f0f0f0; /* Un color claro al hacer hover */
+}
+
+/* Estilos para las cards en modo oscuro */
+.dark-mode .card {
+  background-color: rgb(126, 124, 124, 0.3); /* Fondo oscuro para las cards */
+  border: 1px solid #333; /* Borde oscuro */
+}
+
+.dark-mode .card img {
+  filter: brightness(0.7); /* Reducir brillo de las imágenes para modo oscuro */
+}
+
+/* Estilos para los botones dentro de las cards */
+.dark-mode .btn-primary {
+  background-color: #0069d9; /* Azul más oscuro */
+  border-color: #0069d9;
+}
+
+.dark-mode #estacionHelp,
+.dark-mode #horaHelp,
+.dark-mode #responseHelp {
+  color: white !important;
+}
+
+.dark-mode .btn-primary:hover {
+  background-color: #0056b3; /* Azul aún más oscuro en hover */
+  border-color: #0056b3;
+}
+
+.dark-mode .btn-outline-light {
+  color: white;
+  border-color: white;
+}
+
+.dark-mode .btn-outline-light:hover {
+  background-color: #333;
+  color: white;
+}
+
+/* Modo Oscuro para el texto en general */
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode p {
+  color: white;
+}
+
+/* Estilos para los títulos dentro de las cards */
+.dark-mode .card h2 {
+  color: #007bff; /* Color azul para los títulos dentro de las cards */
+}
+
+/* Estilos para los textos dentro de las cards */
+.dark-mode .card-body,
+.dark-mode .card-header {
+  color: white; /* Asegura que el texto dentro de las cards sea blanco */
+}
+
+/* Añadir efectos suaves en las transiciones */
+body,
+.btn,
+h1,
+h2,
+h3,
+p,
+.card {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* *** Responsive *** */
+@media (max-width: 768px) {
+  header h1,
+  main h2 {
+    font-size: 1.5rem;
+  }
+
+  .btn-primary {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+}
