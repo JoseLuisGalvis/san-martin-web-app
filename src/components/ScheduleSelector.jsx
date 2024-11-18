@@ -1,4 +1,8 @@
 import { useNavigate } from 'react-router-dom';
+import imageOne from '../assets/images/publicidad.jpg';
+import imageTwo from '../assets/images/Clientes.jpg';
+import imageThree from '../assets/images/publicidad.jpeg';
+import imageFour from '../assets/images/publicar.jpg';
 
 const ScheduleSelector = () => {
   const navigate = useNavigate();
@@ -28,8 +32,8 @@ const ScheduleSelector = () => {
             {/* Publicidad Izquierda Superior */}
             <div className="card rounded h-100" data-aos="fade-right">
               <img
-                src={'/src/assets/images/publicidad.jpg'}
-                className="img-fluid h-100 object-fit-cover rounded"
+                src={imageOne}
+                className="img-fluid h-100 object-fit-cover"
                 alt="Publicidad"
                 loading="lazy"
               />
@@ -65,8 +69,8 @@ const ScheduleSelector = () => {
             {/* Publicidad Derecha Superior */}
             <div className="card rounded h-100" data-aos="fade-left">
               <img
-                src={'/src/assets/images/Clientes.jpg'}
-                className="img-fluid h-100 object-fit-cover rounded"
+                src={imageTwo}
+                className="img-fluid h-100 object-fit-cover"
                 alt="Publicidad"
                 loading="lazy"
               />
@@ -78,8 +82,8 @@ const ScheduleSelector = () => {
             {/* Publicidad Izquierda Inferior */}
             <div className="card rounded h-100" data-aos="fade-right">
               <img
-                src={'/src/assets/images/publicidad.jpeg'}
-                className="img-fluid h-100 object-fit-cover rounded"
+                src={imageThree}
+                className="img-fluid h-100 object-fit-cover"
                 alt="Publicidad"
                 loading="lazy"
               />
@@ -114,9 +118,9 @@ const ScheduleSelector = () => {
           <div className="col-12 col-md-4">
             {/* Publicidad Derecha Inferior */}
             <div className="card rounded h-100" data-aos="fade-left">
-              <img
-                src={'/src/assets/images/publicar.jpg'}
-                className="img-fluid h-100 object-fit-cover rounded"
+            <img
+                src={imageFour}
+                className="img-fluid h-100 object-fit-cover"
                 alt="Publicidad"
                 loading="lazy"
               />
