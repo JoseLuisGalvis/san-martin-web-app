@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-
+import images from '../../assets/images'; // Importa el objeto de imágenes
 const DomingoYFeriadosVuelta = () => {
   const [data, setData] = useState(null);
   const [estaciones, setEstaciones] = useState([]);
@@ -104,8 +104,8 @@ const DomingoYFeriadosVuelta = () => {
           <div className="col-12 col-md-4">
             {/* Publicidad Izquierda Superior */}
             <div className="card h-100">
-              <img
-                src={'/src/assets/images/publicidad.jpg'}
+            <img
+                src={images.publicidad}
                 className="img-fluid h-100 object-fit-cover"
                 alt="Publicidad"
                 loading="lazy"
@@ -177,8 +177,8 @@ const DomingoYFeriadosVuelta = () => {
           <div className="col-12 col-md-4">
             {/* Publicidad Derecha Superior */}
             <div className="card h-100">
-              <img
-                src={'/src/assets/images/Clientes.jpg'}
+            <img
+                src={images.clientes}
                 className="img-fluid h-100 object-fit-cover"
                 alt="Publicidad"
                 loading="lazy"
@@ -190,8 +190,8 @@ const DomingoYFeriadosVuelta = () => {
           <div className="col-12 col-md-4">
             {/* Publicidad Izquierda Inferior */}
             <div className="card h-100">
-              <img
-                src={'/src/assets/images/publicidad.jpeg'}
+            <img
+                src={images.camion}
                 className="img-fluid h-100 object-fit-cover"
                 alt="Publicidad"
                 loading="lazy"
@@ -239,8 +239,8 @@ const DomingoYFeriadosVuelta = () => {
           <div className="col-12 col-md-4">
             {/* Publicidad Derecha Inferior */}
             <div className="card h-100">
-              <img
-                src={'/src/assets/images/publicar.jpg'}
+            <img
+                src={images.valla}
                 className="img-fluid h-100 object-fit-cover"
                 alt="Publicidad"
                 loading="lazy"
