@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import { Sun, Moon } from 'lucide-react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css';
+import logoImage from '../assets/images/ConSMLogo.jpeg';
 
 const MyHomePage = () => {
   const [currentTime, setCurrentTime] = useState('');
@@ -55,8 +56,8 @@ const MyHomePage = () => {
         </button>
       </header>
       <main className="flex-grow-1 d-flex flex-column align-items-center justify-content-center text-center px-3" data-aos="zoom-in">
-        <img
-          src={'/src/assets/images/ConSMLogo.jpeg'}
+      <img
+          src={logoImage}
           className="img-fluid h-100 object-fit-cover"
           id="home-image"
           alt="Consultar San Martin Logo"
