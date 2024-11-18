@@ -109,7 +109,7 @@ const SabadoIda = () => {
             {/* Publicidad Izquierda Superior */}
             <div className="card h-100">
               <img
-                src={'/src/assets/images/publicidad.jpg'}
+                src={imageOne}
                 className="img-fluid h-100 object-fit-cover"
                 alt="Publicidad"
                 loading="lazy"
@@ -182,10 +182,10 @@ const SabadoIda = () => {
             {/* Publicidad Derecha Superior */}
             <div className="card h-100">
               <img
-                src={'/src/assets/images/Clientes.jpg'}
-                className="img-fluid h-100 object-fit-cover"
-                alt="Publicidad"
-                loading="lazy"
+                  src={imageTwo}
+                  className="img-fluid h-100 object-fit-cover"
+                  alt="Publicidad"
+                  loading="lazy"
               />
             </div>
           </div>
@@ -195,7 +195,7 @@ const SabadoIda = () => {
             {/* Publicidad Izquierda Inferior */}
             <div className="card h-100">
               <img
-                src={'/src/assets/images/publicidad.jpeg'}
+                src={imageThree}
                 className="img-fluid h-100 object-fit-cover"
                 alt="Publicidad"
                 loading="lazy"
@@ -244,7 +244,7 @@ const SabadoIda = () => {
             {/* Publicidad Derecha Inferior */}
             <div className="card h-100">
               <img
-                src={'/src/assets/images/publicar.jpg'}
+                src={imageFour}
                 className="img-fluid h-100 object-fit-cover"
                 alt="Publicidad"
                 loading="lazy"
