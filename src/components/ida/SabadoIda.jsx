@@ -54,7 +54,7 @@ const SabadoIda = () => {
         throw new Error('Estación no encontrada');
       }
 
-      const formattedTime = selectedTime.replace(':', '');
+      const formattedTime = selectedTime.replace(':', ':');
       const baseUrl = getBaseUrl();
       const url = `${baseUrl}/horariosfs/${estacionNombre}/${formattedTime}`;
 

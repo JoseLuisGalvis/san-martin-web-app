@@ -11,7 +11,7 @@ const ScheduleSelector = () => {
   return (
     <div className="container d-flex flex-column align-items-center min-vh-100 text-white">
       <header className="d-flex justify-content-between align-items-center w-100 py-3 px-4 bg-consultar">
-        <h2 className="m-0">Consultar - San Martín - Selector de Horarios</h2>
+        <h3 className="m-0">Consultar - San Martín - Selector de Horarios</h3>
         <button
           onClick={() => navigate('/')}
           className="btn btn-outline-light"
@@ -90,7 +90,7 @@ const ScheduleSelector = () => {
           <div className="col-12 col-md-4">
             {/* Card de Horarios Vuelta */}
             <div className="card h-100 d-flex align-items-center justify-content-center p-3" data-aos="fade-up">
-              <h2 className="mb-4 text-primary">Vuelta: Dr. Cabred - Retiro</h2>
+              <h3 className="mb-4 text-primary">Vuelta: Dr. Cabred - Retiro</h3>
               <button
                 className="btn bg-consultar mb-3 w-100"
                 onClick={() => handleButtonClick('/vuelta/LunesAViernesVuelta')}

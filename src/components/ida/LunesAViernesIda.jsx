@@ -55,7 +55,7 @@ const LunesAViernesIda = () => {
         throw new Error('Estación no encontrada');
       }
 
-      const formattedTime = selectedTime.replace(':', '');
+      const formattedTime = selectedTime.replace(':', ':');
       const baseUrl = getBaseUrl();
       const url = `${baseUrl}/horarios/${estacionNombre}/${formattedTime}`;
 

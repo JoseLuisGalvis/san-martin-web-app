@@ -55,7 +55,7 @@ const SabadoVuelta = () => {
         throw new Error('Estación no encontrada');
       }
 
-      const formattedTime = selectedTime.replace(':', '');
+      const formattedTime = selectedTime.replace(':', ':');
       const baseUrl = getBaseUrl();
       const url = `${baseUrl}/horariosvueltafs/${estacionNombre}/${formattedTime}`;
 
@@ -88,7 +88,7 @@ const SabadoVuelta = () => {
 
   return (
 <div className="container min-vh-100">
-  <header className="d-flex justify-content-between align-items-center w-100 py-3 px-4 bg-primary bg-opacity-75">
+  <header className="d-flex justify-content-between align-items-center w-100 py-3 px-4 bg-consultar">
     <h2 className="text-white">Vuelta: Dr. Cabred - Retiro</h2>
     <h3 className="text-white">Horarios Sábado</h3>
     <button 
@@ -105,7 +105,7 @@ const SabadoVuelta = () => {
           {/* Primera fila */}
           <div className="col-12 col-md-4">
             {/* Publicidad Izquierda Superior */}
-            <div className="card h-100">
+            <div className="card h-100" data-aos="fade-right">
             <img
                 src={images.publicidad}
                 className="img-fluid h-100 object-fit-cover"
@@ -117,7 +117,7 @@ const SabadoVuelta = () => {
 
           <div className="col-12 col-md-4">
             {/* Formulario de Búsqueda */}
-            <div className="card h-100">
+            <div className="card h-100" data-aos="fade-down">
               <div className="card-body">
                 <h5 className="card-title">Selecciona los detalles</h5>
                 {error && (
@@ -166,7 +166,7 @@ const SabadoVuelta = () => {
 
                   <button 
                     type="submit" 
-                    className="btn btn-primary w-100"
+                    className="btn bg-consultar w-100"
                     disabled={isLoading}
                   >
                     {isLoading ? 'Consultando...' : 'Ver horarios'}
@@ -178,7 +178,7 @@ const SabadoVuelta = () => {
 
           <div className="col-12 col-md-4">
             {/* Publicidad Derecha Superior */}
-            <div className="card h-100">
+            <div className="card h-100" data-aos="fade-left">
             <img
                 src={images.clientes}
                 className="img-fluid h-100 object-fit-cover"
@@ -191,7 +191,7 @@ const SabadoVuelta = () => {
           {/* Segunda fila */}
           <div className="col-12 col-md-4">
             {/* Publicidad Izquierda Inferior */}
-            <div className="card h-100">
+            <div className="card h-100" data-aos="fade-right">
             <img
                 src={images.camion}
                 className="img-fluid h-100 object-fit-cover"
@@ -203,7 +203,7 @@ const SabadoVuelta = () => {
 
           <div className="col-12 col-md-4">
             {/* Resultados de la Búsqueda */}
-            <div className="card h-100">
+            <div className="card h-100" data-aos="fade-up">
               <div className="card-body">
                 <h5 className="card-title">Horarios Disponibles</h5>
                 {isLoading ? (
@@ -240,7 +240,7 @@ const SabadoVuelta = () => {
 
           <div className="col-12 col-md-4">
             {/* Publicidad Derecha Inferior */}
-            <div className="card h-100">
+            <div className="card h-100" data-aos="fade-left">
             <img
                 src={images.valla}
                 className="img-fluid h-100 object-fit-cover"
