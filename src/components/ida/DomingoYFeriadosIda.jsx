@@ -87,9 +87,11 @@ const DomingoYFeriadosIda = () => {
 
   return (
     <div className="container min-vh-100">
-      <header className="d-flex justify-content-between align-items-center w-100 py-3 px-4 bg-consultar">
-        <h2 className="text-white">Ida: Retiro - Dr. Cabred</h2>
-        <h3 className="text-white">Domingos y Feriados</h3>
+      <header className="d-flex justify-content-between align-items-center w-100 py-3 bg-consultar">
+        <div className="d-flex flex-column justify-content-between flex-md-row gap-2">
+          <h5 className="text-white mx-2">Ida: Retiro - Dr. Cabred</h5>
+          <h6 className="text-white mt-1">Domingos y Feriados</h6>
+        </div>
         <button 
           onClick={() => navigate('/schedule')} 
           className="btn btn-outline-light"
