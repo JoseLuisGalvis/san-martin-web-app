@@ -17,8 +17,10 @@ const LunesAViernesIda = () => {
       return 'http://localhost:2500';
     } else if (/192\.168\.\d+\.\d+/.test(window.location.hostname)) {
       return 'http://192.168.0.113:2500';
-    } else {
+    } else if (window.location.hostname === '10.0.2.2') {
       return 'http://10.0.2.2:2500';
+    } else {
+      return 'https://san-martin-backend.vercel.app/';
     }
   };
 
@@ -90,7 +92,7 @@ const LunesAViernesIda = () => {
     <div className="container min-vh-100">
       <header className="d-flex justify-content-between align-items-center w-100 py-3 px-4 bg-consultar">
         <h2 className="text-white">Ida: Retiro - Dr. Cabred</h2>
-        <h3 className="text-white">Horarios Lunes a Viernes</h3>
+        <h3 className="text-white">Lunes a Viernes</h3>
         <button 
           onClick={() => navigate('/schedule')} 
           className="btn btn-outline-light"

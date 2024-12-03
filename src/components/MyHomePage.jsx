@@ -39,8 +39,7 @@ const MyHomePage = () => {
 
   return (
     <div className="container-fluid d-flex flex-column min-vh-100 text-white">
-      <header className="d-flex justify-content-between align-items-center w-100 py-3 px-4 bg-consultar">
-        <h1 className="m-0">Consultar - San Martín</h1>
+      <header className="d-flex flex-wrap justify-content-between align-items-center w-100 py-3 px-4 bg-consultar">
          {/* Aplicamos la clase 'current-time' al span del reloj */}
         <span className="current-time">Hora: {currentTime}</span>
         <button 
